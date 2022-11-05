@@ -14,6 +14,11 @@ const sum = function(array) {
   return total;
 };
 
+// TEXTBOOK SOLUTION //
+// const sum = function(array) {
+//   return array.reduce((total, current) => total + current, 0);
+// };
+
 const multiply = (array) => {
   let total = 1;
   for (let i=0; i < array.length; i++) {
@@ -21,6 +26,13 @@ const multiply = (array) => {
   };
   return total;
 };
+
+// TEXTBOOK SOLUTION //
+// const multiply = function(array) {
+//   return array.length 
+//     ? array.reduce((accumulator, nextItem) -> accumulator, nextItem) 
+//     : 0;
+// }
 
 const power = (a, b) => {
   let total = a;
@@ -30,6 +42,11 @@ const power = (a, b) => {
   return total;
 };
 
+// TEXTBOOK SOLUTION //
+// const power = function(a, b) {
+//   return Math.pow(a, b);
+// };
+
 const factorial = function(a) {
   let total = 1;
   for (let i=1; i<a+1; i++) {
@@ -37,6 +54,16 @@ const factorial = function(a) {
   }
   return total;
 };
+
+// TEXTBOOK SOLUTION //
+// const factorial = function(n) {
+//   if (n === 0) return 1;
+//   let product = 1;
+//   for (let i=n; i>0; i--) {
+//     product *= i;
+//   }
+//   return product;
+// };
 
 // Do not edit below this line
 module.exports = {
